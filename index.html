@@ -1,16 +1,77 @@
- <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>one moment</title>
+    <title>one moment — a pause before the apps you want to use less</title>
+    <meta name="description" content="one moment puts a calm pause in front of the apps you open without deciding to. Nothing leaves your phone. On the App Store for iPhone.">
+
+    <!-- This page will be pasted into messages more than it is visited, and a
+         bare URL with no preview wastes the share. -->
+    <meta property="og:title" content="one moment">
+    <meta property="og:description" content="A pause before the apps you open without deciding to. Nothing leaves your phone.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
     <style>
-      body { font-family: -apple-system, sans-serif; max-width: 600px; margin: 80px auto; padding: 0 24px; color: #1a1a1a; }
+      body {
+        font-family: -apple-system, sans-serif;
+        max-width: 600px;
+        margin: 80px auto;
+        padding: 0 24px 64px;
+        color: #1a1a1a;
+      }
       h1 { font-weight: 300; font-size: 28px; margin-bottom: 8px; }
       p { font-weight: 300; color: #555; line-height: 1.6; }
+      .lede { font-size: 18px; color: #333; }
+
+      /* Teal from the app's design system, so the button reads as the same
+         product as the screenshots on the store page. */
+      .cta {
+        display: inline-block;
+        margin: 28px 0 8px;
+        padding: 13px 26px;
+        background: #0F4C57;
+        color: #F2EDE6;
+        text-decoration: none;
+        border-radius: 999px;
+        font-size: 16px;
+      }
+      .cta:hover { background: #093A3C; }
+      .note { font-size: 14px; color: #777; margin-top: 4px; }
+
+      footer { margin-top: 56px; font-size: 14px; }
+      footer a { color: #1a7b8a; }
+
+      @media (prefers-color-scheme: dark) {
+        body { background: #121516; color: #F2EDE6; }
+        p { color: #a8adae; }
+        .lede { color: #d6d2ca; }
+        .cta { background: #F2EDE6; color: #093A3C; }
+        .cta:hover { background: #ffffff; }
+        .note, footer { color: #8b9092; }
+        footer a { color: #C8B89A; }
+      }
     </style>
   </head>
   <body>
     <h1>one moment</h1>
-    <p>A mindful pause before you open the apps you want to use less. Available soon on the App Store for iPhone.</p>
+    <p class="lede">A pause before the apps you open without deciding to.</p>
+
+    <p>Pick the apps you want to use less. one moment puts a calm screen in
+    front of them — a breath, and the number of times you have opened that app
+    today. Then it lets you through, every time. It never blocks you and it
+    never scolds you.</p>
+
+    <p>Nothing leaves your phone. There is no account, no server, no analytics.</p>
+
+    <!-- Region-neutral on purpose: Apple redirects to the visitor's own
+         storefront. The /de/ link would send everyone to the German store. -->
+    <a class="cta" href="https://apps.apple.com/app/id6760625438">Download on the App Store</a>
+    <p class="note">iPhone · iOS 17 or later</p>
+
+    <footer>
+      <a href="privacy.html">Privacy</a>
+    </footer>
   </body>
-  </html>
+</html>
